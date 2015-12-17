@@ -9,12 +9,13 @@ public class Customer implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "First Name")
+   @org.kie.api.definition.type.Label("First Name")
    private java.lang.String firstName;
-   @org.kie.api.definition.type.Label(value = "Last Name")
+   @org.kie.api.definition.type.Label("Last Name")
    private java.lang.String lastName;
+
    @org.kie.api.definition.type.Label(value = "Address")
-   private java.lang.String address;
+   private seahawksrf.rflanguageproj.com.rhc.entities.address address;
 
    public Customer()
    {
@@ -40,18 +41,19 @@ public class Customer implements java.io.Serializable
       this.lastName = lastName;
    }
 
-   public java.lang.String getAddress()
+   public seahawksrf.rflanguageproj.com.rhc.entities.address getAddress()
    {
       return this.address;
    }
 
-   public void setAddress(java.lang.String address)
+   public void setAddress(
+         seahawksrf.rflanguageproj.com.rhc.entities.address address)
    {
       this.address = address;
    }
 
    public Customer(java.lang.String firstName, java.lang.String lastName,
-         java.lang.String address)
+         seahawksrf.rflanguageproj.com.rhc.entities.address address)
    {
       this.firstName = firstName;
       this.lastName = lastName;
