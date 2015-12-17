@@ -15,7 +15,7 @@ public class Customer implements java.io.Serializable
    private java.lang.String lastName;
 
    @org.kie.api.definition.type.Label(value = "Address")
-   private seahawksrf.rflanguageproj.com.rhc.entities.address address;
+   private seahawksrf.rflanguageproj.com.rhc.entities.Address Address;
 
    public Customer()
    {
@@ -41,23 +41,23 @@ public class Customer implements java.io.Serializable
       this.lastName = lastName;
    }
 
-   public seahawksrf.rflanguageproj.com.rhc.entities.address getAddress()
+   public seahawksrf.rflanguageproj.com.rhc.entities.Address getAddress()
    {
-      return this.address;
+      return this.Address;
    }
 
    public void setAddress(
-         seahawksrf.rflanguageproj.com.rhc.entities.address address)
+         seahawksrf.rflanguageproj.com.rhc.entities.Address Address)
    {
-      this.address = address;
+      this.Address = Address;
    }
 
    public Customer(java.lang.String firstName, java.lang.String lastName,
-         seahawksrf.rflanguageproj.com.rhc.entities.address address)
+         seahawksrf.rflanguageproj.com.rhc.entities.Address Address)
    {
       this.firstName = firstName;
       this.lastName = lastName;
-      this.address = address;
+      this.Address = Address;
    }
 
 }
